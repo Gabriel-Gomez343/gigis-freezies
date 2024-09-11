@@ -7,3 +7,10 @@
   color: #007bff;
   font-size: 3rem;
 }
+.pdf-img {
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  margin-top: 20px;
+  border: 2px solid #ddd;
+}
