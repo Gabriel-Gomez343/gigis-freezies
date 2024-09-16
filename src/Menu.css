@@ -1,0 +1,18 @@
+.menu-container {
+    background-image: url('/public/imgs/gigi_banner_v03.png');
+    background-size: cover;  /* Ensures the image covers the entire container */
+    background-position: center center;  /* Centers the image */
+    background-repeat: no-repeat; /* No image repetition */
+    background-attachment: fixed;  /* Keeps the image fixed when scrolling */
+    min-height: 100vh;  /* Ensures the container takes at least the full height of the viewport */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+
+  
