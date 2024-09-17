@@ -10,7 +10,9 @@ function App() {
     <Router>
     <div className="App">
       <header className="App-header">
+        <div className="header-title">
         <h1>Gigi's Freezies</h1>
+        </div>
         {/* Add links to other pages */}
         <nav>
           <ul className='nav-links'>

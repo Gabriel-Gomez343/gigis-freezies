@@ -23,7 +23,7 @@
   color: #007bff;
   font-size: 3rem;
   margin: 0;  /* Remove any default margin */
-  padding: 10px;  /* Add padding for spacing */
+  padding: 20px;  /* Add padding for spacing */
   text-align: center;
   width: 100%;
 }
@@ -38,13 +38,12 @@
 
 .nav-links {
   list-style-type: none;
-  padding: 0;
+  padding: 10px 30px;
   display: flex;
-  justify-content: space-around; /* Distributes the links evenly */
-  width: 100%;  /* Ensures the navigation takes full width */
+  justify-content: space-around;
+  width: 100%;
   background-color: #007bff;
-  padding: 10px;
-  margin: 0;  /* Remove default margin */
+  margin: 0;
 }
 
 .nav-links li {
@@ -57,9 +56,13 @@
   color: white;
   font-size: 1.2rem;
   display: block;  /* Makes the anchor tag fill the li */
-  padding: 10px 0;  /* Adds padding for better click area */
+  padding: 10px 15px;  /* Adds padding for better click area */
 }
 
 .nav-links a:hover {
   text-decoration: underline;
+}
+.header-title {
+  text-align: center; /* Centers the title within its container */
+  width: 100%; /* Ensures it spans the full width */
 }
