@@ -10,6 +10,7 @@ function App() {
     <Router>
     <div className="App">
       <header className="App-header">
+        <img src='imgs/logo_with_text.png'/>
         <div className="header-title">
         <h1>Gigi's Freezies</h1>
         </div>

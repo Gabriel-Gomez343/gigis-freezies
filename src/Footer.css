@@ -1,26 +1,85 @@
-/* src/Footer.css */
 .footer {
-    background-color: #f8f9fa;  /* Light grey background */
-    padding: 0;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    text-align: center;
-    width: 100%;
-    bottom: 0;
-  }
-  
-  .social-link {
-    margin-left: 10px;
-    transition: transform 0.3s;
-  }
-  
-  .social-link:hover {
-    transform: scale(1.1);
-  }
-  
-  .footer p {
-    margin: 0;
-    font-size: 1.1rem;
-    color: #333;
-  }
-  
+  background-color: #FAF0E6;  /* Light grey background */
+  padding: 0;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;  /* Adjusts spacing between sections */
+  align-items: center;
+  width: 70%;  /* Limit the total width of the content */
+  margin: 0 auto;  /* Center the footer content */
+  padding: 10px 0;  /* Add some padding for spacing */
+}
+
+.social-link {
+  margin-left: 10px;
+  transition: transform 0.3s;
+}
+
+.social-link:hover {
+  transform: scale(1.1);
+}
+
+.footer p {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.contact, .hours {
+  margin-top: 15px;
+}
+
+.left-section {
+  flex-grow: 0;
+  text-align: left;
+}
+
+.left-section .nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;  /* Reduce the gap between nav links */
+}
+
+.left-section .nav-links a {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 1.1rem;
+}
+
+.left-section .nav-links a:hover {
+  text-decoration: underline;
+}
+
+.center-section {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 5px;  /* Reduce the gap between social link and contact info */
+  flex-grow: 0;  /* Prevent growing, keep it centered */
+  align-items: center;  /* Centers items horizontally */
+}
+
+.right-section {
+  text-align: right;
+  flex-grow: 0;
+  margin-left: 20px;  /* Reduce margin between right section and center */
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
