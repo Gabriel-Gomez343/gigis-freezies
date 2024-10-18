@@ -8,9 +8,10 @@ function Footer() {
     <footer className="footer">
       <hr />
       <div className="footer-content">
-        
+
         {/* Left Section: Navigation Links */}
         <div className="left-section">
+          <p className="underline">Site Navigation:</p>
           <ul className="nav-links-footer">
             <li><Link to="/">Home</Link></li>
             <li><Link to="/menu">Menu</Link></li>
@@ -18,29 +19,38 @@ function Footer() {
           </ul>
         </div>
 
-        {/* Center Section: Social Links and Contact */}
+        {/* Center Section: Hours */}
         <div className="center-section">
-          <p>Follow us:</p>
-          <a 
-            href="https://www.instagram.com/gigis.freezies" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="social-link"
-          >
-            <FaInstagram size={30} color="#E1306C" />
-          </a>
-          <p>Phone: TBD</p>
-          <p>Email: jackie@gigisfreezies.com</p>
-        </div>
-
-        {/* Right Section: Hours */}
-        <div className="right-section">
+          <p className='underline'>Phone:</p>
+          <p>TBD</p>
+          <p className='underline'>Email:</p>
+          <p>jackie@gigisfreezies.com</p>
           <div className="hours-section">
-            <p>Hours:</p>
+            <p className="underline">Hours:</p>
             <p>Mon-Fri: TBD</p>
             <p>Sat-Sun: TBD</p>
           </div>
         </div>
+
+        {/* Right Section: Social Links and Contact */}
+        <div className="right-section">
+          <div className="follow-us-row">
+            <p className="underline">Follow us:</p>
+            <a
+              href="https://www.instagram.com/gigis.freezies"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-link"
+            >
+              <FaInstagram size={30} color="#E1306C" />
+            </a>
+
+          </div>
+          <a href="/">
+            <img src='imgs/logo_with_text.png' />
+          </a>
+        </div>
+
       </div>
     </footer>
   );

@@ -4,7 +4,7 @@ body {
 
 .App {
   text-align: center;
-  margin-top: 9vh;
+  margin-top: 10vh;
 }
 
 .App-header {
@@ -12,7 +12,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #352F44;
+  background-image: linear-gradient(to right, #770981,#3f97fbea, #770981);
   min-height: 9vh;
   display: flex;
   flex-direction: row;
@@ -20,8 +20,8 @@ body {
   justify-content: flex-start;  /* Align items to the left */
   padding: 0 20px;
   font-size: calc(10px + 2vmin);
-  color: #FAF0E6;
   z-index: 1000;
+  border-bottom: solid 2px #770981;
 }
 
 .App-header img {
@@ -66,4 +66,21 @@ body {
   align-items: center;
   text-align: left;
   margin-left: 10px;  /* Add small left margin if needed */
+}
+/* Home page styles */
+.welcome-box {
+  width: 100%;  /* Make the box span the full width of the page */
+  height: 300px;  /* You can adjust the height as needed */
+  background-image: url('/public/imgs/fwdfwphotos/20230928_113755.jpg');  /* Path to your image */
+  background-size: cover;  /* Ensure the image covers the whole box */
+  background-position: center;  /* Center the image in the box */
+  display: flex;
+  justify-content: center;  /* Horizontally center the text */
+  align-items: center;  /* Vertically center the text */
+  color: white;  /* Set the text color */
+  font-size: 2rem;  /* Set the text size */
+  font-weight: bold;  /* Make the text bold */
+  text-align: center;  /* Center-align the text */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);  /* Optional: adds a subtle shadow */
+  margin: 0;  /* Remove margin to avoid spacing around the box */
 }

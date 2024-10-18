@@ -4,35 +4,38 @@ import './App.css';
 import Footer from './Footer';
 import About from './About';
 import Menu from './Menu';
+import ImageCarousel from './ImageCarousel';
 
 function App() {
   return (
     <Router>
-    <div className="App">
-      <header className="App-header">
-        <img src='imgs/logo_with_text.png'/>
-        <div className="header-title">
-        <h1>Gigi's Freezies</h1>
-        </div>
-        {/* Add links to other pages */}
-        <nav>
-          <ul className='nav-links'>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/menu">Menu</Link></li>
-            <li><Link to="/about">About</Link></li>
-          </ul>
-        </nav>
-      </header>
+      <div className="App">
+        <header className="App-header">
+          <a href="/">
+            <img src='imgs/logo_with_text.png' />
+          </a>
+          <div className="header-title">
+            <h1>Gigi's Freezies</h1>
+          </div>
+          {/* Add links to other pages */}
+          <nav>
+            <ul className='nav-links'>
+              <li><Link to="/">Home</Link></li>
+              <li><Link to="/menu">Menu</Link></li>
+              <li><Link to="/about">About</Link></li>
+            </ul>
+          </nav>
+        </header>
 
-      {/* Add routes for each page */}
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/menu" element={<Menu />} />
-        <Route path="/about" element={<About />} />
-      </Routes>
+        {/* Add routes for each page */}
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/menu" element={<Menu />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
 
-      <Footer />
-    </div>
+        <Footer />
+      </div>
     </Router>
   );
 }
@@ -40,8 +43,10 @@ function App() {
 function Home() {
   return (
     <div>
-      <h2>Home</h2>
-      <p>Welcome to Gigi's Freezies!</p>
+      <div className="welcome-box">
+        Best Freeze Dried Candy in town!
+      </div>
+      <ImageCarousel />
     </div>
   );
 }

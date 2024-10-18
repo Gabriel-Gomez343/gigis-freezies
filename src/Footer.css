@@ -3,7 +3,7 @@
   padding: 0;
   margin-top: 15px;
   margin-bottom: 15px;
-  text-align: center;
+  text-align: left;
   width: 100%;
   bottom: 0;
 }
@@ -11,7 +11,7 @@
 .footer-content {
   display: flex;
   justify-content: space-around;  /* Adjusts spacing between sections */
-  align-items: center;
+  align-items: flex-start;  /* Align items at the top */
   width: 70%;  /* Limit the total width of the content */
   margin: 0 auto;  /* Center the footer content */
   padding: 10px 0;  /* Add some padding for spacing */
@@ -41,7 +41,7 @@
   text-align: left;
 }
 
-.left-section .nav-links {
+.left-section .nav-links-footer {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -50,29 +50,49 @@
   gap: 5px;  /* Reduce the gap between nav links */
 }
 
-.left-section .nav-links a {
+.left-section .nav-links-footer a {
   text-decoration: none;
-  color: #007bff;
+  color: #735ab4;
   font-size: 1.1rem;
 }
 
-.left-section .nav-links a:hover {
+.underline {
+  margin: 3;
+  text-decoration: underline;
+  font-size: 1.1rem;
+  color: #352F44;
+}
+
+.left-section .nav-links-footer a:hover {
   text-decoration: underline;
 }
 
 .center-section {
   display: flex;
   flex-direction: column;
-  text-align: center;
-  gap: 5px;  /* Reduce the gap between social link and contact info */
+  align-items: flex-start;  /* Aligns text to the left */
+  gap: 10px;  /* Adds some spacing */
   flex-grow: 0;  /* Prevent growing, keep it centered */
-  align-items: center;  /* Centers items horizontally */
+}
+
+
+.right-section .follow-us-row p {
+  margin-right: 10px;  /* Add space between text and icon */
+  margin-bottom: 5px;
+}
+
+.right-section .social-link {
+  margin-left: 5px;  /* Remove default left margin */
 }
 
 .right-section {
-  text-align: right;
+  text-align: left;
   flex-grow: 0;
   margin-left: 20px;  /* Reduce margin between right section and center */
+}
+.right-section img {
+  height: 120px;
+  margin-top: 30px;
 }
 
 hr {
