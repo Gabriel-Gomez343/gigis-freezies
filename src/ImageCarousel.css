@@ -1,0 +1,48 @@
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 80%;
+  margin: 20px auto;
+  overflow: hidden;  /* Hide overflowing images */
+}
+
+.carousel-images {
+  display: flex;
+  width: 200%;  /* Ensure it can show two images at once */
+  transform: translateX(0);
+  transition: transform 0.5s ease;
+}
+
+.carousel-images.animating {
+  transform: translateX(-50%);  /* Slide by 50% to show the next image */
+}
+
+.carousel-image {
+  flex: 0 0 50%;  /* Each image takes up 50% of the container */
+  text-align: center;
+}
+
+.carousel-image img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+}
+
+.carousel-arrow {
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.left-arrow {
+  position: absolute;
+  left: 0;
+}
+
+.right-arrow {
+  position: absolute;
+  right: 0;
+}

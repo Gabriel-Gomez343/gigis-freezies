@@ -1,0 +1,36 @@
+/* Wrapper Styles */
+.about-wrapper {
+    display: flex;                /* Use flexbox to arrange container with background */
+    justify-content: center;      /* Center the container in the middle */
+    background-image: url('/public/imgs/fwdfwphotos/1000005123.jpg'); /* Background image on the sides */
+    background-size: cover;       /* Cover the entire background */
+    background-position: center;  /* Center the background image */
+    height: auto;                 /* Adjust height based on content */
+    padding: 20px;               /* Optional padding to add space around the content */
+  }
+  
+  /* General Styles for the About Us Page */
+  .about-container {
+    max-width: 800px;            /* Limit the width of the content */
+    margin: 20px;                /* Add margin for spacing around the container */
+    padding: 20px;               /* Add padding inside the container */
+    background-color: #FAF0E6;      /* White background for the content */
+    border-radius: 8px;          /* Optional: Slight rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  .about-container h2 {
+    font-size: 2rem;             /* Size of the header */
+    color: #333;                 /* Darker text color for contrast */
+    text-align: center;          /* Center the header */
+    margin-bottom: 20px;         /* Space between the header and paragraphs */
+  }
+  
+  .about-container p {
+    font-size: 1.1rem;           /* Paragraph font size */
+    line-height: 1.6;            /* Increase line spacing for readability */
+    margin-bottom: 15px;         /* Space between each paragraph */
+    color: #555;                 /* Softer color for paragraph text */
+    text-align: left;
+  }
+  
