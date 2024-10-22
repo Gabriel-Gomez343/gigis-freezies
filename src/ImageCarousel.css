@@ -3,31 +3,38 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  width: 80%;
-  margin: 20px auto;
-  overflow: hidden;  /* Hide overflowing images */
-}
-
-.carousel-images {
-  display: flex;
-  width: 200%;  /* Ensure it can show two images at once */
-  transform: translateX(0);
-  transition: transform 0.5s ease;
-}
-
-.carousel-images.animating {
-  transform: translateX(-50%);  /* Slide by 50% to show the next image */
-}
-
-.carousel-image {
-  flex: 0 0 50%;  /* Each image takes up 50% of the container */
-  text-align: center;
-}
-
-.carousel-image img {
   width: 100%;
-  max-height: 300px;
+  margin: 20px 20px 20px 50px;
+  padding: 10px;
+  overflow: hidden;  /* Hide overflowing images */
+  border-radius: 75px;  /* Rounded corners for the entire carousel */
+  padding: 20px;
+}
+
+.slide {
+  height: 500px;  /* Adjust height to your preference */
+  width: 100%;
+}
+
+.slide img {
+  height: 100%;
+  width: 100%;
   object-fit: cover;
+  border-radius: 75px;  /* Ensure images have rounded corners */
+  transition: transform 0.5s ease;  /* Smoothen the transition */
+}
+
+.carousel .slide {
+  border-radius: 75px;  /* Ensure each slide itself has rounded corners */
+  border: 2px solid #7AB2D3;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  /* Add subtle shadow for depth */
+  background-color: transparent;
+  transition: box-shadow 0.3s ease;
+}
+
+.carousel .carousel-slider {
+  overflow: hidden;
+  border-radius: 75px;  /* Ensure the whole slider has rounded corners */
 }
 
 .carousel-arrow {
