@@ -16,7 +16,13 @@ function ImageCarousel() {
     return (
         <div className="carousel-container">
             <Carousel
+                autoPlay
+                interval={4000}
+                infiniteLoop
                 showIndicators
+                showThumbs={false}
+                showStatus={false}
+                transitionTime={700}
                 renderIndicator={(clickHandler, isSelected, index) => {
                     return (
                         <li

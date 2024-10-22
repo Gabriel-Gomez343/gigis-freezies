@@ -12,7 +12,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  background-image: linear-gradient(to right, #770981,#3f97fbea, #770981);
+  background-image: linear-gradient(to right, #3B1E54,#7AB2D3, #9B7EBD);
   min-height: 9vh;
   display: flex;
   flex-direction: row;
@@ -21,7 +21,7 @@ body {
   padding: 0 20px;
   font-size: calc(10px + 2vmin);
   z-index: 1000;
-  border-bottom: solid 2px #770981;
+  border-bottom: solid 1px white;
 }
 
 .App-header img {
@@ -70,7 +70,7 @@ body {
 /* Home page styles */
 .welcome-box {
   width: 100%;  /* Make the box span the full width of the page */
-  height: 300px;  /* You can adjust the height as needed */
+  height: 550px;  /* You can adjust the height as needed */
   background-image: url('/public/imgs/fwdfwphotos/20230928_113755.jpg');  /* Path to your image */
   background-size: cover;  /* Ensure the image covers the whole box */
   background-position: center;  /* Center the image in the box */
@@ -83,4 +83,50 @@ body {
   text-align: center;  /* Center-align the text */
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);  /* Optional: adds a subtle shadow */
   margin: 0;  /* Remove margin to avoid spacing around the box */
+}
+
+.carousel-section {
+  position: relative; /* Add position relative for the pseudo-element */
+  display: flex;
+  justify-content: space-between;  /* Ensure space between the carousel and text block */
+  align-items: center;  /* Vertically center the items */
+  padding: auto;
+  width: 100%;
+  background-image: linear-gradient(to right, #7AB2D3,#B9E5E8, #B9E5E8, #7AB2D3);
+  overflow: hidden; /* Prevent overflow of the slanted part */
+}
+
+.carousel-section::after {
+  content: '';
+  position: absolute;
+  bottom: 0; /* Position it at the bottom */
+  left: 0;
+  width: 100%;
+  height: 300px; /* Height of the slant */
+  background: inherit; /* Use the same background as the section */
+  clip-path: polygon(0 100%, 50% 60%, 100% 100%); /* Create a slant using a polygon */
+  z-index: -1; /* Send the pseudo-element behind the content */
+}
+
+.carousel {
+  flex: 1;  /* Let the carousel section take up more space */
+  max-width: 60%;  /* Limit the carousel to 60% of the container width */
+}
+
+.carousel-text {
+  text-align: left;
+  flex: 1;
+  padding-left: 20px;
+  max-width: 40%;  /* Limit the text block to 40% of the container width */
+}
+
+.carousel-text h2 {
+  font-size: 2rem;
+  color: #352F44;
+}
+
+.carousel-text p {
+  font-size: 1.2rem;
+  color: #333;
+  margin-top: 10px;
 }

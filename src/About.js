@@ -24,7 +24,7 @@ function About() {
         But our mission isn't just about the treats; it's about the experience. We're not just serving sweets; we're curating cosmic journeys, where each bite ignites the imagination and sends taste buds soaring to infinity and beyond.
       </p>
       <p>
-        So don your spacesuit, buckle up, and prepare for liftoff. Whether you're a seasoned astronaut or a curious cosmic explorer, there's a flavor galaxy waiting to be discovered at [Business Name]. Let's embark on this cosmic confectionery odyssey together – because in the vast expanse of the universe, there's always room for a little sweetness
+        So don your spacesuit, buckle up, and prepare for liftoff. Whether you're a seasoned astronaut or a curious cosmic explorer, there's a flavor galaxy waiting to be discovered at Gigi's Freezies. Let's embark on this cosmic confectionery odyssey together – because in the vast expanse of the universe, there's always room for a little sweetness
       </p>
       </div>
     </div>

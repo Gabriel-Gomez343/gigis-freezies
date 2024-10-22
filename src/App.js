@@ -12,7 +12,7 @@ function App() {
       <div className="App">
         <header className="App-header">
           <a href="/">
-            <img src='imgs/logo_with_text.png' />
+            <img src='imgs/logo_without_text.png' />
           </a>
           <div className="header-title">
             <h1>Gigi's Freezies</h1>
@@ -44,9 +44,21 @@ function Home() {
   return (
     <div>
       <div className="welcome-box">
-        Best Freeze Dried Candy in town!
+        Best Freeze Dried Candy and Italian Ice in town!
       </div>
-      <ImageCarousel />
+      <div className='carousel-section'>
+        <div className='carousel'>
+          <ImageCarousel />
+        </div>
+        <div className='carousel-text'>
+          <p>
+            Try our wide selection of delicious freeze-dried 
+            <br />
+            candy and Italian ice
+            at Gigi's Freezies!
+          </p>
+        </div>
+      </div>
     </div>
   );
 }
