@@ -6,6 +6,13 @@ import About from './About';
 import Menu from './Menu';
 import ImageCarousel from './ImageCarousel';
 
+const files=['/imgs/fwdfwphotos/20230928_113429.jpg',
+          '/imgs/fwdfwphotos/20230928_113634.jpg',
+          '/imgs/fwdfwphotos/20230929_153039.jpg',
+          '/imgs/fwdfwphotos/20230928_113301.jpg',
+          '/imgs/fwdfwphotos/1000005344.jpg',
+          '/imgs/fwdfwphotos/20230928_113206.jpg'];
+
 function App() {
   return (
     <Router>
@@ -48,11 +55,12 @@ function Home() {
       </div>
       <div className='carousel-section'>
         <div className='carousel'>
-          <ImageCarousel />
+          <ImageCarousel images={files}    
+           />
         </div>
         <div className='carousel-text'>
           <p>
-            Try our wide selection of delicious freeze-dried 
+            Try our wide selection of delicious freeze-dried
             <br />
             candy and Italian ice
             at Gigi's Freezies!
