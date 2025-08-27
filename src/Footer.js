@@ -22,13 +22,13 @@ function Footer() {
         {/* Center Section: Hours */}
         <div className="center-section">
           <p className='underline'>Phone:</p>
-          <p>TBD</p>
+          <p>(805)403-6878</p>
           <p className='underline'>Email:</p>
           <p>jackie@gigisfreezies.com</p>
           <div className="hours-section">
             <p className="underline">Hours:</p>
-            <p>Mon-Fri: TBD</p>
-            <p>Sat-Sun: TBD</p>
+            <p>Mon-Sat: 10am-9pm</p>
+            <p>Sun: 11am-pm</p>
           </div>
         </div>
 

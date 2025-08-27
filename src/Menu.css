@@ -1,18 +1,55 @@
 .menu-container {
-    background-image: url('/public/imgs/gigi_banner_v03.png');
-    background-size: cover;  /* Ensures the image covers the entire container */
-    background-position: center center;  /* Centers the image */
-    background-repeat: no-repeat; /* No image repetition */
-    background-attachment: fixed;  /* Keeps the image fixed when scrolling */
-    min-height: 100vh;  /* Ensures the container takes at least the full height of the viewport */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    padding: 20px;
-    text-align: center;
-  }
-  
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #d8e0dd;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(98, 228, 210, 0.1);
+  text-align: center;
+}
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* always 5 per row */
+  gap: 20px;
+  padding: 20px;
+  justify-items: center; /* center items inside cells */
+  max-width: 90%;        /* 🔹 control container width */
+  margin: 0 auto;        /* center container */
+}
 
-  
+.menu-item {
+  text-align: center;
+  width: 80%;
+}
+
+.menu-item img {
+  width: 100%;                 /* fill its grid cell */
+  aspect-ratio: 1 / 1;          /* ensures it's a square */
+  object-fit: cover;            /* crop nicely */
+  border-radius: 10px;
+  border: 2px solid #735ab4;
+}
+
+.menu-item p {
+  margin-top: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.toggle-btn {
+  margin-top: 10px;
+  padding: 8px 16px;
+  border: 2px solid #735ab4;
+  background-color: #fff;
+  color: #735ab4;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.toggle-btn:hover {
+  background-color: #735ab4;
+  color: #fff;
+}
