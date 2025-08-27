@@ -67,6 +67,9 @@ function Home() {
           </p>
         </div>
       </div>
+      <div className='third-section'>
+        <p>Try our wide selection of delicious freeze-dried candy and Italian ice at Gigi's Freezies!</p>
+      </div>
     </div>
   );
 }
