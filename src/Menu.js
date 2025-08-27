@@ -74,6 +74,7 @@ function Menu() {
       <MenuSection title="Italian Ice" items={italianIce} />
       <MenuSection title="Gelato Flavors" items={gelatoFlavors} />
       <MenuSection title="Freeze-Dried Candy" items={freezeDryCandy} />
+
     </div>
   );
 }

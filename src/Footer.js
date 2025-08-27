@@ -17,6 +17,9 @@ function Footer() {
             <li><Link to="/menu">Menu</Link></li>
             <li><Link to="/about">About Us</Link></li>
           </ul>
+          <br />
+          <p className="underline">Location:</p>
+          <p>2327 North Oxnard Blvd, <br />Oxnard CA 93036</p>
         </div>
 
         {/* Center Section: Hours */}
@@ -24,7 +27,8 @@ function Footer() {
           <p className='underline'>Phone:</p>
           <p>(805)403-6878</p>
           <p className='underline'>Email:</p>
-          <p>jackie@gigisfreezies.com</p>
+          <p>gigisice22@outlook.com</p>
+          <br />
           <div className="hours-section">
             <p className="underline">Hours:</p>
             <p>Mon-Sat: 10am-9pm</p>
